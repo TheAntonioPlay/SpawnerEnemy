@@ -1,9 +1,9 @@
 using UnityEngine;
 
-public class EnemyMovement : MonoBehaviour
+public class EnemyMover : MonoBehaviour
 {
     [SerializeField] private float _speed;
-    private Vector2 _direction;
+    private Vector3 _direction;
 
     private void FixedUpdate()
     {
@@ -13,6 +13,6 @@ public class EnemyMovement : MonoBehaviour
 
     public void Init()
     {
-        _direction = Vector2.left;
+        _direction = Vector3.left;
     }
 }

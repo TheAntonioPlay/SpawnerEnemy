@@ -14,7 +14,7 @@ public class Spawner : MonoBehaviour
 
     private IEnumerator Spawning()
     {
-        while (true)
+        while (enabled)
         {
             Instantiate(_enemy, _spawner.position, Quaternion.identity);
             
